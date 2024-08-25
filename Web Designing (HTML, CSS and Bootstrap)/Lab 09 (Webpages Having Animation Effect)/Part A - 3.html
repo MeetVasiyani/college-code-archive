@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        @keyframes moveDivWithDelay {
+            0% { left: 0; top: 0; }
+            25% { left: 250px; top: 0; }
+            50% { left: 250px; top: 250px; }
+            75% { left: 0; top: 250px; }
+            100% { left: 0; top: 0; }
+        }
+
+        .move-with-delay {
+            width: 100px;
+            height: 100px;
+            background-color: green;
+            position: absolute;
+            animation: moveDivWithDelay 4s infinite 2s;
+        }
+    </style>
+</head>
+<body>
+    <div class="move-with-delay"></div>
+</body>
+</html>

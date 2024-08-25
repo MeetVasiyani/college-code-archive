@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        @keyframes moveDivReverse {
+            0% { left: 0; top: 0; }
+            25% { left: 250px; top: 0; }
+            50% { left: 250px; top: 250px; }
+            75% { left: 0; top: 250px; }
+            100% { left: 0; top: 0; }
+        }
+
+        .move-reverse {
+            width: 100px;
+            height: 100px;
+            background-color: purple;
+            position: absolute;
+            animation: moveDivReverse 4s infinite reverse;
+        }
+    </style>
+</head>
+<body>
+    <div class="move-reverse"></div>
+</body>
+</html>

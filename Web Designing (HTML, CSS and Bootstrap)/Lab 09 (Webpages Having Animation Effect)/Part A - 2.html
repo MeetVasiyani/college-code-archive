@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        @keyframes moveDiv {
+            0% { left: 0; top: 0; }
+            25% { left: 250px; top: 0; }
+            50% { left: 250px; top: 250px; }
+            75% { left: 0; top: 250px; }
+            100% { left: 0; top: 0; }
+        }
+
+        .move {
+            width: 100px;
+            height: 100px;
+            background-color: orange;
+            position: absolute;
+            animation: moveDiv 4s infinite;
+        }
+    </style>
+</head>
+<body>
+    <div class="move"></div>
+</body>
+</html>

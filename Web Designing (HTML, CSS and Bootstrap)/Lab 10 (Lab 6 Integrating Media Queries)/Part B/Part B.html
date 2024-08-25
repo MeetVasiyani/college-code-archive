@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Part B</title>
+    <style>
+        /* Styles for larger screens */
+        .main {
+            height: 60px;
+        }
+        .main1 {
+            height: 550px;
+            border: 1px dotted black;
+            display: flex;
+        }
+        .main2 {
+            background-color: red;
+            width: 20%;
+            height: 500px;
+            float: left;
+            text-align: center;
+        }
+        .main3 {
+            width: auto;
+            border: 1px solid;
+            border-color: black;
+        }
+        .header {
+            float: right;
+            margin: 10px;
+            color: blue;
+        }
+        .navigation {
+            border: 1px solid;
+            border-color: black;
+            margin-bottom: 10px;
+        }
+        .navigation1 {
+            border: 2px solid;
+            border-color: black;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        .navigation2 {
+            border: 2px solid;
+            border-color: black;
+        }
+        .content {
+            width: 70%;
+            height: 500px;
+            float: left;
+        }
+        .name {
+            float: left;
+            margin: 10px;
+        }
+        .name1 {
+            float: left;
+            margin: 10px;
+            width: 800px;
+        }
+        .name2 {
+            margin: 10px;
+            float: left;
+        }
+        .footer {
+            background-color: blue;
+            color: white;
+            height: 30px;
+            float: left;
+            width: 100%;
+            height: 50px;
+        }
+
+        /* Media Queries */
+        @media (max-width: 768px) {
+            .main1 {
+                flex-direction: column;
+                height: auto;
+            }
+            .main2 {
+                width: 100%;
+                height: auto;
+            }
+            .content {
+                width: 100%;
+                height: auto;
+            }
+            .name1 {
+                width: 100%;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .main {
+                height: auto;
+            }
+            .footer {
+                height: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <img src="./Windows.JPG" width="80px" height="50px" style="float:left;">
+        <div class="header">Login</div>
+        <div class="header">Contact</div>
+        <div class="header">About</div>
+        <div class="header">Home</div>
+    </div>
+    <hr>
+    <div class="main1">
+        <div class="main2">
+            <div class="main3">
+                <p>Sidebar</p>
+            </div>
+            <div class="navigation">
+                <p>Home</p>
+            </div>
+            <div class="navigation1">
+                <p>Placement</p>
+            </div>
+            <div class="navigation1">
+                <p>Recruitment</p>
+            </div>
+            <div class="navigation1">
+                <p>Faculty</p>
+            </div>
+            <div class="navigation2">
+                <p>News</p>
+            </div>
+        </div>
+        <div class="content">
+            <div class="name">
+                <img src="./Image 1.JPG" height="50px" width="70px">
+                <p>Arjun Bala</p>
+                <p>BE,Mtech(CSE)</p>
+            </div>
+            <div class="name1">
+                <img src="./Image 2.JPG" height="50px" width="70px">
+                <p>Firoz Shreyasiya</p>
+                <p>BE,ME</p>
+            </div>
+            <div class="name2">
+                <img src="./Image 2.JPG" height="50px" width="70px">
+                <p>Harsh Kansagara</p>
+                <p>L&T PVT LTD</p>
+                <p>4.5 Lakh</p>
+            </div>
+            <div class="name2">
+                <img src="./Image 3.JPG" height="50px" width="70px">
+                <p>Shyam Kantesariya</p>
+                <p>Tata Consultancy Service</p>
+                <p>3.2 Lakh</p>
+            </div>
+            <div class="name2">
+                <img src="./Image 4.JPG" height="50px" width="70px">
+                <p>Jeet Dhamecha</p>
+                <p>Reliance Industry LTD</p>
+                <p>5.0 Lakh</p>
+            </div>
+            <div class="name2">
+                <img src="./Image 5.JPG" height="50px" width="70px">
+                <p>Harsh Maniar</p>
+                <p>Reliance Industry LTD</p>
+                <p>5.0 Lakh</p>
+            </div>
+            <div class="name2">
+                <img src="./Image 6.JPG" height="50px" width="70px">
+                <p>Anand Dabhi</p>
+                <p>BSNL</p>
+                <p>5.5 Lakh</p>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <p align="center">©Darshan University-Rajkot</p>
+    </div>
+</body>
+</html>

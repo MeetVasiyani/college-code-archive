@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        @keyframes moveDivInfinite {
+            0% {top: 0; left: 0;}
+            25% {top: 0; left: 250px;}
+            50% {top: 250px; left: 250px;}
+            75% {top: 250px; left: 0;}
+            100% {top: 0; left: 0;}
+        }
+        .move-infinite {
+            width: 100px;
+            height: 100px;
+            position: absolute;
+            background-color: pink;
+            animation: moveDivInfinite 4s infinite;
+        }
+    </style>
+</head>
+<body>
+
+<div class="move-infinite"></div>
+
+</body>
+</html>

@@ -1,0 +1,325 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        .background{
+            width: 100%;
+            height: 100%;
+            filter: blur(20px);
+        }
+        .main{
+            width: 80%;
+            height: 80%;
+            position: relative;
+            top: -90%;
+            left: 10%;
+        }
+        .product{
+            width: 50%;
+            height: 100%;
+            background-color: rgb(250, 245, 245);
+        }
+        .img{
+            width: 100%;
+            height: 50%;
+            position: relative;
+            top: 25%;
+        }
+        .img1{
+            position: relative;
+            width: 30px;
+            height: 30px;
+            top: -270px;
+            left: 30px;
+        }
+        .img2{
+            position: relative;
+            width: 35px;
+            height: 30px;
+            top: -250px;
+            left: 30px;
+        }
+        .img3{
+            position: relative;
+            width: 30px;
+            height: 30px;
+            bottom: -130px;
+            left: 30px;
+        }
+        .img4{
+            position: relative;
+            width: 30px;
+            height: 30px;
+            bottom: -150px;
+            left: 30px;
+        }
+        .details{
+            width: 50%;
+            height: 100%;
+            position: relative;
+            background-color: white;
+            float: inline-end;
+            top: -100%;
+        }
+        .arrow{
+            width: 25px;
+            height: 16px;
+            position: relative;
+            top: 17px;
+            left: 50px;
+        }
+        .back{
+            color: blue;
+            position: relative;
+            left: 80px;
+            font-weight: 800;
+        }
+        .bedroom{
+            position: relative;
+            left: 50px;
+            top: 20px;
+            color: gray;
+        }
+        .pname{
+            font-size: 30px;
+            position: relative;
+            left: 50px;
+            top: 20px;
+            font-weight: bolder;
+        }
+        .rating{
+            position: relative;
+            left: 50px;
+            top: 28px;
+            width: 70px;
+            height: 18px;
+        }
+        .rating1{
+            position: relative;
+            left: 130px;
+            top: 10px;
+            color: grey;
+        }
+        .quality{
+            position: relative;
+            left: 50px;
+            top: 20px;
+        }
+        .quality1{
+            padding: 3px 3px 3px 3px;
+            width: 50px;
+            text-align: center;
+            position: relative;
+            top: 30px;
+            left: 50px;
+            background-color: white;
+            border-radius: 5px;
+            border: solid 1px black;
+        }
+        .quality2{
+            padding: 3px 3px 3px 3px;
+            width: 70px;
+            text-align: center;
+            position: relative;
+            top: 4px;
+            left: 120px;
+            background-color: whitesmoke;
+            border-radius: 5px;
+            border: solid 1px black;
+        }
+        .style{
+            position: relative;
+            left: 50px;
+            top: 20px;
+        }
+        .style1{
+            position: relative;
+            left: 50px;
+            top: 20px;
+        }
+        .style2{
+            padding: 3px 3px 3px 3px;
+            border: solid 1px black;
+            border-radius: 5px;
+            text-align: center;
+            position: relative;
+            float: left;
+            top: 10px;
+            margin-left: 10px;
+        }
+        .color{
+            position: relative;
+            top: 70px;
+            left: -220px;
+        }
+        .color1{
+            position: relative;
+            top: 80px;
+            left: -220px;
+            width: 150px;
+            height: 30px;
+        }
+        .size{
+            position: relative;
+            top: 90px;
+            left: 50px;
+        }
+        .size1{
+            position: relative;
+            top: 90px;
+            left: 50px;
+        }
+        .size2{
+            padding: 3px 3px 3px 3px;
+            border: solid 1px black;
+            border-radius: 5px;
+            text-align: center;
+            position: relative;
+            float: left;
+            top: 10px;
+            margin-left: 10px;
+        }
+        .info{
+            position: relative;
+            top: 130px;
+            left: 50px;
+            padding: 18px;
+            width: 400px;
+            border-bottom: solid 1px black;
+        }
+        .info1{
+            position: relative;
+            float: left;
+            border-bottom: solid 2px blue;
+            margin-left: 30px;
+            left: -110px;
+        }
+        .info2{
+            position: relative;
+            float: left;
+            margin-left: 30px;
+            left: -110px;
+        }
+        .items{
+            position: relative;
+            left: -180px;
+            top: 150px;
+        }
+        .popup{
+            width: 68%;
+            height: 60px;
+            position: relative;
+            left: 20%;
+            top: -100%;
+            border-radius: 5px;
+            background-color: white;
+            border: solid 1px black;
+        }
+        .pimg{
+            width: 40px;
+            height: 40px;
+            position: relative;
+            top: 10px;
+            left: 10px;
+        }
+        .pname1{
+            position: relative;
+            left: 60px;
+            top: -30px;
+        }
+        .info3{
+            color: rgb(226, 215, 215);
+            position: relative;
+            left: 60px;
+            top: -30px;
+        }
+        .addon{
+            position: relative;
+            top: -70px;
+            left: 500px;
+        }
+        .addon1{
+            position: relative;
+            top: -70px;
+            left: 500px;
+            width: 30px;
+            height: 30px;
+        }
+        .amount{
+            position: relative;
+            top: -110px;
+            left: 700px;
+            font-size: 25px;
+        }
+        .button{
+            color: white;
+            margin-right: 10px;
+            padding: 4px 4px 4px 4px;
+            background-color: blue;
+            font-size: 20px;
+            border-radius: 5px;
+            position: relative;
+            top: -140px;
+            left: 770px;
+            width: 150px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div><img class="background" src="./Image 8.JPG" alt="img"></div>
+    <div class="main">
+        <div class="product">
+            <img class="img" src="./Image 8.JPG" alt="img">
+            <div><img class="img1" src="./Image 1.JPG" alt="icon"></div>
+            <div><img class="img2" src="./Image 2.JPG" alt="icon"></div>
+            <div><img class="img3" src="./Image 3.JPG" alt="icon"></div>
+            <div><img class="img4" src="./Image 4.JPG" alt="icon"></div>
+        </div>
+        <div class="details">
+            <div><img class="arrow" src="./Image 5.JPG" alt="icon"></div>
+            <div class="back">Back to bedroom</div>
+            <div class="bedroom">BEDROOM</div>
+            <div class="pname">College Essentials</div>
+            <div><img class="rating" src="./Image 6.JPG" alt=""></div>
+            <div class="rating1">4.4(328 reviews)</div>
+            <div class="quality">Select Quality</div>
+            <div class="quality1">Basic</div>
+            <div class="quality2">Premium</div>
+            <div class="style">Style</div>
+            <div class="style1">
+                <div class="style2">Minimal</div>
+                <div class="style2">Bohemian</div>
+                <div class="style2">Floral</div>
+                <div class="style2">Other</div>
+            </div>
+            <div class="color">Color</div>
+            <div><img class="color1" src="./Image 7.JPG" alt="icon"></div>
+            <div class="size">Size</div>
+            <div class="size1">
+                <div class="size2">Twin XL</div>
+                <div class="size2">Full</div>
+            </div>
+            <div class="info">
+                <div class="info1">What's Inside</div>
+                <div class="info2">Reviews</div>
+                <div class="info2">FAQs</div>
+            </div>
+            <div class="items">Customizable Items</div>
+        </div>
+    </div>
+    <div class="popup">
+        <div>
+            <img class="pimg" src="./Image 10.JPG" alt="">
+        </div>
+        <div class="pname1">College Essentials</div>
+        <div class="info3">Everything you need for freshman year.</div>
+        <div class="addon">Add Ons</div>
+        <div><img class="addon1" src="./Image 9.JPG" alt=""></div>
+        <div class="amount">$195</div>
+        <div class="button">Add to Cart(2)</div>
+    </div>
+</body>
+</html>

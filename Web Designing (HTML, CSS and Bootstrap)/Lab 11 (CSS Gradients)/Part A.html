@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Gradient Demonstration - Part A</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #fff;
+            flex-direction: column;
+        }
+        .gradient-container {
+            display: flex;
+            gap: 20px;
+        }
+        .gradient-box {
+            width: 300px;
+            height: 200px;
+            border-radius: 10px;
+        }
+        .linear-gradient {
+            background: linear-gradient(to bottom, red, yellow);
+        }
+        .radial-gradient {
+            background: radial-gradient(ellipse, red, yellow, green);
+        }
+    </style>
+</head>
+<body>
+    <div class="gradient-container">
+        <div class="gradient-box linear-gradient"></div>
+        <div class="gradient-box radial-gradient"></div>
+    </div>
+</body>
+</html>

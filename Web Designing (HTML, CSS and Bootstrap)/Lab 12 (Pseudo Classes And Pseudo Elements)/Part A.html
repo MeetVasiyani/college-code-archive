@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-classes and Pseudo-elements Demo</title>
+    <style>
+        /* 1. Link after visited red color before visited orange color */
+        a:link {
+            color: orange;
+        }
+        a:visited {
+            color: red;
+        }
+
+        /* 2. Add special style (change color, font size, etc.) to first line of paragraph */
+        p::first-line {
+            color: blue;
+            font-size: 1.5em;
+        }
+
+        /* 3. Add special style (change color, font size, etc.) to first letter of paragraph */
+        p::first-letter {
+            color: green;
+            font-size: 2em;
+            font-weight: bold;
+        }
+
+        /* 4. Change background color to yellow when user selects particular text */
+        ::selection {
+            background: yellow;
+        }
+
+        /* 5. Add special style to an element when user mouse over it */
+        .hover-effect:hover {
+            color: purple;
+            font-size: 1.2em;
+        }
+    </style>
+</head>
+<body>
+    <h1>Pseudo-classes and Pseudo-elements Demo</h1>
+    <p>
+        This is a demonstration paragraph. The first line and the first letter have special styles. 
+        Additionally, some of this text can be selected, and it will change the background color.
+    </p>
+    <p class="hover-effect">
+        Hover over this text to see the special style applied when the user mouses over it.
+    </p>
+    <a href="https://example.com">Visit Example.com</a>
+</body>
+</html>

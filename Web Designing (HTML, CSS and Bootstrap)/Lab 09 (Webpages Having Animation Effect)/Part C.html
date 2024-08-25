@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML CSS Screen Saver</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            height: 100%;
+            background: #000;
+        }
+
+        .circle {
+            position: absolute;
+            border-radius: 50%;
+            opacity: 0.7;
+            animation: move 25s linear infinite;
+        }
+
+        @keyframes move {
+            0% {
+                transform: translate(0, 0);
+            }
+            100% {
+                transform: translate(calc(100vw - 100px), calc(100vh - 100px));
+            }
+        }
+        .circle:nth-child(1) {
+            width: 100px;
+            height: 100px;
+            background: rgba(255, 0, 0, 0.5);
+            top: 10%;
+            left: 10%;
+        }
+
+        .circle:nth-child(2) {
+            width: 150px;
+            height: 150px;
+            background: rgba(0, 255, 0, 0.5);
+            top: 50%;
+            left: 50%;
+            animation-duration: 30s;
+        }
+
+        .circle:nth-child(3) {
+            width: 80px;
+            height: 80px;
+            background: rgba(0, 0, 255, 0.5);
+            top: 70%;
+            left: 30%;
+            animation-duration: 20s;
+        }
+
+        .circle:nth-child(4) {
+            width: 120px;
+            height: 120px;
+            background: rgba(255, 255, 0, 0.5);
+            top: 20%;
+            left: 70%;
+            animation-duration: 35s;
+        }
+
+        .circle:nth-child(5) {
+            width: 200px;
+            height: 200px;
+            background: rgba(255, 0, 255, 0.5);
+            top: 80%;
+            left: 20%;
+            animation-duration: 40s;
+        }
+
+        /* Additional circles can be added here */
+    </style>
+</head>
+<body>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+</body>
+</html>

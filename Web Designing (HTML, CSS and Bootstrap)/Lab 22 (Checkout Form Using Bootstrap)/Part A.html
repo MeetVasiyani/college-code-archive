@@ -1,0 +1,196 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <title>Part A</title>
+  </head>
+  <body>
+    <div class="Sign_in_logo text-center p-3">
+        <img src="https://getbootstrap.com/docs/5.3/assets/brand/bootstrap-logo-shadow.png" alt="Responsive Image"
+            height="80px">
+    </div>
+    <div class="h2 d-flex justify-content-center mt-2">
+        Checkout Form
+    </div>
+    <div class="d-flex justify-content-center text-center mt-2">
+        Below is example form built entirely with form controls. Each required form group has a <br>
+        validation state that can triggered by attempting to submit the form without completing it.
+    </div>
+    <div class="row mt-5">
+        <div class="col-8 ms-5 h3">
+            Billing address
+        </div>
+        <div class="col-2 h3">
+            Your cart
+        </div>
+        <div class="col-1">
+            <span style='font-size:30px;'><i class="bi bi-3-circle-fill"></i></span>
+        </div>
+    </div>
+    <div class="row">
+        <div class="row col-8">
+            <div class="row ms-5">
+                <div class="col-5">
+                    <label for="exampleInputEmail1" class="form-label">First name</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                </div>
+                <div class="col-5">
+                    <label for="exampleInputEmail1" class="form-label">Last name</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                </div>
+            </div>
+            <div class="row ms-5">
+                <div>
+                    <div>
+                        <label for="exampleInputEmail1" class="form-label">Username</label>
+                    </div>
+                    <div class="input-group">
+                        <span class="input-group-text" id="basic-addon1">@</span>
+                        <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+                    </div>
+                </div>
+            </div>
+            <div class="row ms-5 mt-2">
+                <div>
+                    <label for="formGroupExampleInput" class="form-label">Email (optional)</label>
+                    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="you@example.com">
+                </div>
+            </div>
+            <div class="row ms-5 mt-2">
+                <div>
+                    <label for="formGroupExampleInput" class="form-label">Address</label>
+                    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="1234 Main St">
+                </div>
+            </div>
+            <div class="row ms-5 mt-2">
+                <div>
+                    <label for="formGroupExampleInput" class="form-label">Address 2 (optional)</label>
+                    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Apartment or suite">
+                </div>
+            </div>
+            <div class="row ms-5 mt-2 border-bottom">
+                <div class="col-6">
+                    <label for="validationCustom03" class="form-label">Country</label>
+                    <select class="form-select" id="validationCustom04" required>
+                        <option selected disabled value="">Choose...</option>
+                        <option>...</option>
+                    </select>
+                  </div>
+                  <div class="col-3">
+                    <label for="validationCustom04" class="form-label">State</label>
+                    <select class="form-select" id="validationCustom04" required>
+                      <option selected disabled value="">Choose...</option>
+                      <option>...</option>
+                    </select>
+                  </div>
+                  <div class="col-3 mb-4">
+                    <label for="validationCustom05" class="form-label">Zip</label>
+                    <input type="text" class="form-control" id="validationCustom05" required>
+                </div>
+            </div>
+            <div class="row ms-5 mt-4 border-bottom">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                    <label class="form-check-label" for="invalidCheck">
+                        Shipping address is the same as my billing address
+                    </label>
+                </div>
+                <div class="form-check mb-4">
+                    <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                    <label class="form-check-label" for="invalidCheck">
+                        Save this information for next time
+                    </label>
+                </div>
+            </div>
+            <div class="ms-5 mt-5 h3">
+                Payment
+            </div>
+            <div class="row ms-5 mt-3">
+                <div class="form-check">
+                    <input type="radio" class="form-check-input" id="validationFormCheck2" name="radio-stacked" required checked>
+                    <label class="form-check-label" for="validationFormCheck2">Credit card</label>
+                </div>
+                <div class="form-check">
+                    <input type="radio" class="form-check-input" id="validationFormCheck2" name="radio-stacked" required>
+                    <label class="form-check-label" for="validationFormCheck2">Debit card</label>
+                </div>
+                <div class="form-check">
+                    <input type="radio" class="form-check-input" id="validationFormCheck2" name="radio-stacked" required>
+                    <label class="form-check-label" for="validationFormCheck2">PayPal</label>
+                </div>
+            </div>
+            <div class="row ms-5 mt-3">
+                <div class="col-5">
+                    <label for="exampleInputEmail1" class="form-label">Name on card</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    <div id="emailHelp" class="form-text">Full name as displayed on card</div>
+                </div>
+                <div class="col-5">
+                    <label for="exampleInputEmail1" class="form-label">Credit card number</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                </div>
+            </div>
+            <div class="row ms-5 mt-3 border-bottom">
+                <div class="col-2">
+                    <label for="exampleInputEmail1" class="form-label">Expiration</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                </div>
+                <div class="col-2 mb-4">
+                    <label for="exampleInputEmail1" class="form-label">CVV</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                </div>
+            </div>
+            <div class="row ms-5">
+                <button type="submit" class="btn btn-primary mt-4">Continue to checkout</button>
+            </div>
+        </div>
+        <div class="row col-3 ms-5" style="height: 100px;">
+            <div class="alert m-0 border-dark" role="alert">
+                <div class="row">
+                    <div class="col-10 h5">Product name</div>
+                    <div class="col-1 h5">$12</div>
+                </div>
+                <div>Brief description</div>
+            </div>
+            <div class="alert m-0 border-dark" role="alert">
+                <div class="row">
+                    <div class="col-10 h5">Second Product</div>
+                    <div class="col-1 h5">$8</div>
+                </div>
+                <div>Brief description</div>
+            </div>
+            <div class="alert m-0 border-dark" role="alert">
+                <div class="row">
+                    <div class="col-10 h5">Third item</div>
+                    <div class="col-1 h5">$5</div>
+                </div>
+                <div>Brief description</div>
+            </div>
+            <div class="alert m-0 text-success border-dark" role="alert">
+                <div class="row">
+                    <div class="col-10 h5">Promo code</div>
+                    <div class="col-1 h5">-$5</div>
+                </div>
+                <div>EXAMPLECODE</div>
+            </div>
+            <div class="alert m-0 border-dark" role="alert">
+                <div class="row">
+                    <div class="col-10 h5">Total (USD)</div>
+                    <div class="col-1 h5">$20</div>
+                </div>
+            </div>
+            <div class="alert mt-4 border-dark" role="alert">
+                <div class="row m-0">
+                    <div class="col-8 h5">
+                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Promo code">
+                    </div>
+                    <div class="col-4 h5"><button type="button" class="btn btn-primary">Redeem</button></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./Bootstrap/bootstrap-5.0.2-dist/bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        @keyframes moveDivTiming {
+            0% { left: 0; top: 0; }
+            25% { left: 250px; top: 0; }
+            50% { left: 250px; top: 250px; }
+            75% { left: 0; top: 250px; }
+            100% { left: 0; top: 0; }
+        }
+
+        .move-timing {
+            width: 100px;
+            height: 100px;
+            background-color: orange;
+            position: absolute;
+            animation: moveDivTiming 4s infinite cubic-bezier(0.68, -0.55, 0.27, 1.55);
+        }
+    </style>
+</head>
+<body>
+    <div class="move-timing"></div>
+</body>
+</html>

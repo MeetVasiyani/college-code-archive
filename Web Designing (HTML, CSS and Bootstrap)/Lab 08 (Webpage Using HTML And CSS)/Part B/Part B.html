@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            height: 200vh;
+            background-image: url("https://cdn.pixabay.com/photo/2018/01/14/23/12/nature-3082832_1280.jpg");
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            padding: 5%;
+        }
+        .whole{
+            height: 100%;
+            width: 100%;
+        }
+        .top{
+            height: 50%;
+            width: 100%;
+            background-image: url("https://img.freepik.com/premium-photo/young-man-sitting-computer-desk-office-working-with-documents_88135-1287.jpg?w=1380");
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+        }
+        .navigator{
+            height: 10%;
+            width: 100%;
+            display: flex;
+            justify-content: left;
+            align-items: left;
+        }
+        .text{
+            height: 80%;
+            width: 100%;
+        }
+        .logo{
+            width: 25%;
+            height: 90%;
+        }
+        .navi{
+            width: 40%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .opt{
+            margin-left: 4%;
+            text-align: center;
+            color: white;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+        }
+        .search{
+            display: flex;
+            justify-content: center;
+            flex-direction: row;
+            width: 20%;
+            height: 30%;
+        }
+        .textArea{
+            background-color: white;
+            color:gray;
+            border-top-left-radius: 10%;
+            border-bottom-left-radius: 10%;
+        }
+        .Srch{
+            height: 37px;
+            background-color: red;
+            color: white;
+            border-top-right-radius: 25%;
+            border-bottom-right-radius: 25%;
+        }
+        .mid{
+            background-color: whitesmoke;
+            height: 100px;
+            padding-left: 25%;
+        }
+        .companyLogo{
+            float:left;
+            margin-left: 35px;
+        }
+        .paypal{
+            margin-top:2%;
+        }
+        .google{
+            margin-top: 3.7%;
+        }
+        .samsung{
+            margin-top: 3%;
+        }
+        .lenovo{
+            margin-top: 1%;
+        }
+        .amazon{
+            margin-top: 3.5%;
+        }
+        .bottom{
+            height: 50%;
+            width: 100%;
+            background-color: whitesmoke;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        .left{
+            width: 30%;
+            padding-top: 30px;
+            padding-left: 70px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        .lTxt{
+            font-size: 100px;
+            padding-top: 30px;
+        }
+        .sTxt{
+            font-size: 20px;
+            padding-top: 30px;
+        }
+        .right{
+            width: 70%;
+        }
+        .txt{
+            height: 20%;
+            width: 100%;
+            font-size: 40px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        .tiles{
+            height: 80%;
+            width: 90%;
+            float: left;
+            margin-left: 20px;
+            padding-top: 5%;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            justify-content: center;
+        }
+        .tile{
+            height: 280px;
+            width: 250px;
+            border-radius: 5%;
+            margin-left: 2%;
+            font-size: 20px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            padding-left: 25px;
+            padding-top: 220px;
+        }
+        .t1{
+            background-color: black;
+            color: white;
+        }
+        .t2{
+            background-color: lightgray;
+        }
+        .t3{
+            background-color: lightgray;
+        }
+
+        @media (max-width: 620px){
+            .whole{
+                width: 100%;
+               /* margin-top: 2%;*/
+            }
+
+            .top{
+                width: 100%;
+                /*margin-top: 2%;*/
+            }
+
+            .navigator{
+                width: 100%;
+                margin-top: 2%;
+                float: right;
+            }
+
+            .search{
+                width: 100%;
+               /* margin-top: 2%;*/
+            }
+
+            .text{
+                width: 100%;
+             /*   margin-top: 2%;*/
+            }
+
+            .mid{
+                width: 100%;
+               /* margin-top: 2%;*/
+            }
+
+            .bottom{
+                width: 100%;
+                /*margin-top: 2%;*/
+            }
+
+
+        }
+    </style>
+</head>
+<body>
+    <div class="whole">
+        <div class="top">
+            <div class="navigator">
+                <div class="logo"><img src="./Capture.JPG" height="125%"></div>
+                <div class="navi">
+                   <div class="home"><a href="https://darshan.ac.in/" style="color: black;margin: 20px;" target="_blank">home</a></div>
+                    <div class="my intro"><a href="https://darshan.ac.in/leadership" style="color: black;margin: 20px;" target="_blank">my intro</a></div>
+                    <div class="services"><a href="https://darshan.ac.in/programs" style="color: black;margin: 20px;" target="_blank">services</a></div>
+                    <div class="pages"><a href="https://darshan.ac.in/program/btech-computer" style="color: black;margin: 20px;"target="_blank">pages</a></div>
+                    <div class="contact"><a href="https://darshan.ac.in/contact-us" style="color: black;margin: 20px; "target="_blank">contact</a></div>
+                </div>
+                <div class="search">
+                    <div><textarea class="textArea">Enter Text...</textarea></div>
+                    <div><button class="Srch" type="submit">Search</button></div>
+                </div>
+            </div>
+            <div class="text">
+                <div style="font-size: 20px;font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;margin-left: 5%;margin-top: 5%;">Hi, I am Meet Vasiyani</div>
+                <div style="font-size: 100px;margin-left: 4.5%;font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">DESIGNER</div>
+                <div style="font-size: 15px;font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;margin-left: 5%;">I love to work in UI/UX designing. I always try to<br>make the best UI with best UX</div>
+            </div>
+        </div>
+        <div class="mid">
+            <div class="companyLogo paypal"><img src="https://png.pngitem.com/pimgs/s/111-1117296_paypal-hd-png-download.png" height="50px"></div>
+            <div class="companyLogo google"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Google_2015_logo_colorless_mourning_period.svg/2560px-Google_2015_logo_colorless_mourning_period.svg.png" height="20px"></div>
+            <div class="companyLogo samsung"><img src="https://pngimg.com/uploads/samsung_logo/samsung_logo_PNG16.png" height="35px"></div>
+            <div class="companyLogo lenovo"><img src="https://seeklogo.com/images/L/lenovo-logo-E857A0C4D2-seeklogo.com.png" height="55px" style="padding-top: 25px;"></div>
+            <div class="companyLogo amazon"><img src="https://pngimg.com/uploads/amazon/amazon_PNG28.png" height="35px"></div>
+        </div>
+        <div class="bottom">
+            <div class="left">
+                <div class="lTxt">22</div>
+                <div class="sTxt">Years Of Experience<br>Working</div>
+            </div>
+            <div class="right">
+                <div class="txt">I'm a designer & devloper with a passion for<br>web design</div>
+                <div class="tiles">
+                    <div class="tile t1">
+                        Creative design<br>
+                        <small>Explore more-></small>
+                    </div>
+                    <div class="tile t2">Web Design</div>
+                    <div class="tile t3">Brand Identity</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
