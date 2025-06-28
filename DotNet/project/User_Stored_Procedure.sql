@@ -1,0 +1,117 @@
+
+SELECT * FROM [USER];
+
+-- EXEC PR_USER_INSERT 'admin','admin123','admin@example.com','1234567890',1;
+
+CREATE PROCEDURE PR_USER_INSERT
+
+    @USERNAME       NVARCHAR(100),
+    @PASSWORD       NVARCHAR(100),
+    @EMAIL          NVARCHAR(100),
+    @MOBILENO       NVARCHAR(100),
+    @ISACTIVE       BIT
+
+AS
+BEGIN
+
+    INSERT INTO [USER] 
+    VALUES (
+        @USERNAME,
+        @PASSWORD,
+        @EMAIL,
+        @MOBILENO,
+        @ISACTIVE,
+        GETDATE(),
+        GETDATE()
+    );
+
+END;
+
+
+-- EXEC PR_USER_UPDATEBYPK 1,'admin','admin123','admin@example.com','1234567890',0;
+
+
+CREATE PROCEDURE PR_USER_UPDATEBYPK
+
+    @USERID         INT,
+    @USERNAME       NVARCHAR(100),
+    @PASSWORD       NVARCHAR(100),
+    @EMAIL          NVARCHAR(100),
+    @MOBILENO       NVARCHAR(100),
+    @ISACTIVE       BIT
+
+AS
+BEGIN
+
+    UPDATE [USER]
+    SET 
+        USERNAME    =   @USERNAME,
+        PASSWORD    =   @PASSWORD,
+        EMAIL       =   @EMAIL,
+        MOBILENO    =   @MOBILENO,
+        ISACTIVE    =   @ISACTIVE,
+        MODIFIED    =   GETDATE()
+
+    WHERE USERID = @USERID;
+
+END;
+
+-- EXEC PR_USER_DELETEBYPK 1
+
+CREATE PROCEDURE PR_USER_DELETEBYPK
+
+    @USERID         INT
+
+AS
+BEGIN
+
+    DELETE FROM [USER]
+    WHERE USERID = @USERID;
+
+END;
+
+-- EXEC PR_USER_SELECTBYPK 2
+
+CREATE PROCEDURE PR_USER_SELECTBYPK
+
+    @USERID         INT
+
+AS
+BEGIN
+
+    SELECT 
+        USERID,
+        USERNAME,
+        PASSWORD,
+        EMAIL,
+        MOBILENO,
+        ISACTIVE,
+        CREATED,
+        MODIFIED
+
+    FROM [USER]
+    WHERE USERID = @USERID;
+
+END;
+
+
+-- EXEC PR_USER_SELECTALL
+
+CREATE PROCEDURE PR_USER_SELECTALL
+
+AS
+BEGIN
+
+    SELECT 
+        [USER].USERID,
+        [USER].USERNAME,
+        [USER].PASSWORD,
+        [USER].EMAIL,
+        [USER].MOBILENO,
+        [USER].ISACTIVE,
+        [USER].CREATED,
+        [USER].MODIFIED
+
+    FROM [USER];
+
+END;

@@ -1,0 +1,118 @@
+-- EXEC PR_DOCTOR_INSERT
+
+CREATE PROCEDURE PR_DOCTOR_INSERT
+    @Name            NVARCHAR(100),
+    @Phone           NVARCHAR(20),
+    @Email           NVARCHAR(100),
+    @Qualification   NVARCHAR(100),
+    @Specialization  NVARCHAR(100),
+    @IsActive        BIT,
+    @UserID          INT
+AS
+BEGIN
+
+    INSERT INTO DOCTOR
+    VALUES(
+        @NAME,
+        @PHONE,
+        @EMAIL,
+        @QUALIFICATION,
+        @SPECIALIZATION,
+        @ISACTIVE,
+        GETDATE(),
+        GETDATE(),
+        @USERID
+    );
+END;
+
+-- EXEC PR_DOCTOR_UPDATEBYPK
+
+CREATE PROCEDURE PR_DOCTOR_UPDATEBYPK
+    @DOCTORID        INT,
+    @Name            NVARCHAR(100),
+    @Phone           NVARCHAR(20),
+    @Email           NVARCHAR(100),
+    @Qualification   NVARCHAR(100),
+    @Specialization  NVARCHAR(100),
+    @IsActive        BIT,
+    @UserID          INT
+AS
+BEGIN
+
+    UPDATE DOCTOR
+    SET
+        [NAME] = @NAME,
+        PHONE = @PHONE,
+        EMAIL = @EMAIL,
+        QUALIFICATION = @QUALIFICATION,
+        SPECIALIZATION = @SPECIALIZATION,
+        ISACTIVE = @ISACTIVE,
+        MODIFIED = GETDATE(),
+        USERID = @USERID
+
+    WHERE DOCTORID = @DOCTORID;
+END;
+
+-- EXEC PR_DOCTOR_DELETEBYPK
+
+CREATE PROCEDURE PR_DOCTOR_DELETEBYPK
+
+    @DOCTORID      INT
+
+AS
+BEGIN
+
+    DELETE FROM DOCTOR
+    WHERE DOCTORID = @DOCTORID;
+
+END;
+
+-- EXEC PR_DOCTOR_SELECTBYID 1
+
+CREATE PROCEDURE PR_DOCTOR_SELECTBYID
+
+    @DOCTORID      INT
+
+AS
+BEGIN
+
+    SELECT
+        DOCTORID,
+        NAME,
+        PHONE,
+        EMAIL,
+        QUALIFICATION,
+        SPECIALIZATION,
+        ISACTIVE,
+        CREATED,
+        MODIFIED,
+        USERID
+
+    FROM DOCTOR
+    WHERE DOCTORID = @DOCTORID;
+
+END;
+
+-- EXEC PR_DOCTOR_SELECTALL
+
+CREATE PROCEDURE PR_DOCTOR_SELECTALL
+
+AS
+BEGIN
+
+    SELECT 
+        D.DOCTORID,
+        D.NAME,
+        D.PHONE,
+        D.EMAIL,
+        D.QUALIFICATION,
+        D.SPECIALIZATION,
+        D.ISACTIVE,
+        D.CREATED,
+        D.MODIFIED,
+        D.USERID,
+        U.USERNAME
+    FROM DOCTOR D
+    INNER JOIN [USER] U ON U.USERID = D.USERID;
+
+END;
