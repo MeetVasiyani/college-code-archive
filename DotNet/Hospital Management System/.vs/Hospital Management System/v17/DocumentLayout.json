@@ -1,0 +1,122 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Semester 5\\dotnet\\Hospital Management System\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A603A83D-E30F-CB88-4355-1F0CAB6A08FB}|Hospital Management System.csproj|d:\\semester 5\\dotnet\\hospital management system\\views\\patient\\patientaddedit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A603A83D-E30F-CB88-4355-1F0CAB6A08FB}|Hospital Management System.csproj|solutionrelative:views\\patient\\patientaddedit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A603A83D-E30F-CB88-4355-1F0CAB6A08FB}|Hospital Management System.csproj|d:\\semester 5\\dotnet\\hospital management system\\controllers\\patient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A603A83D-E30F-CB88-4355-1F0CAB6A08FB}|Hospital Management System.csproj|solutionrelative:controllers\\patient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A603A83D-E30F-CB88-4355-1F0CAB6A08FB}|Hospital Management System.csproj|d:\\semester 5\\dotnet\\hospital management system\\controllers\\doctorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A603A83D-E30F-CB88-4355-1F0CAB6A08FB}|Hospital Management System.csproj|solutionrelative:controllers\\doctorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A603A83D-E30F-CB88-4355-1F0CAB6A08FB}|Hospital Management System.csproj|d:\\semester 5\\dotnet\\hospital management system\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A603A83D-E30F-CB88-4355-1F0CAB6A08FB}|Hospital Management System.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A603A83D-E30F-CB88-4355-1F0CAB6A08FB}|Hospital Management System.csproj|d:\\semester 5\\dotnet\\hospital management system\\views\\doctor\\doctoraddedit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A603A83D-E30F-CB88-4355-1F0CAB6A08FB}|Hospital Management System.csproj|solutionrelative:views\\doctor\\doctoraddedit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A603A83D-E30F-CB88-4355-1F0CAB6A08FB}|Hospital Management System.csproj|d:\\semester 5\\dotnet\\hospital management system\\views\\patient\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A603A83D-E30F-CB88-4355-1F0CAB6A08FB}|Hospital Management System.csproj|solutionrelative:views\\patient\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "PatientAddEdit.cshtml",
+              "DocumentMoniker": "D:\\Semester 5\\dotnet\\Hospital Management System\\Views\\Patient\\PatientAddEdit.cshtml",
+              "RelativeDocumentMoniker": "Views\\Patient\\PatientAddEdit.cshtml",
+              "ToolTip": "D:\\Semester 5\\dotnet\\Hospital Management System\\Views\\Patient\\PatientAddEdit.cshtml",
+              "RelativeToolTip": "Views\\Patient\\PatientAddEdit.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-02T11:12:50.184Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Patient.cs",
+              "DocumentMoniker": "D:\\Semester 5\\dotnet\\Hospital Management System\\Controllers\\Patient.cs",
+              "RelativeDocumentMoniker": "Controllers\\Patient.cs",
+              "ToolTip": "D:\\Semester 5\\dotnet\\Hospital Management System\\Controllers\\Patient.cs",
+              "RelativeToolTip": "Controllers\\Patient.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-02T11:06:54.379Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "D:\\Semester 5\\dotnet\\Hospital Management System\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
+              "ToolTip": "D:\\Semester 5\\dotnet\\Hospital Management System\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-02T11:11:22.749Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "DoctorAddEdit.cshtml",
+              "DocumentMoniker": "D:\\Semester 5\\dotnet\\Hospital Management System\\Views\\Doctor\\DoctorAddEdit.cshtml",
+              "RelativeDocumentMoniker": "Views\\Doctor\\DoctorAddEdit.cshtml",
+              "ToolTip": "D:\\Semester 5\\dotnet\\Hospital Management System\\Views\\Doctor\\DoctorAddEdit.cshtml",
+              "RelativeToolTip": "Views\\Doctor\\DoctorAddEdit.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-02T11:10:34.445Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\Semester 5\\dotnet\\Hospital Management System\\Views\\Patient\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Patient\\Index.cshtml",
+              "ToolTip": "D:\\Semester 5\\dotnet\\Hospital Management System\\Views\\Patient\\Index.cshtml",
+              "RelativeToolTip": "Views\\Patient\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-02T11:07:42.538Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "DoctorController.cs",
+              "DocumentMoniker": "D:\\Semester 5\\dotnet\\Hospital Management System\\Controllers\\DoctorController.cs",
+              "RelativeDocumentMoniker": "Controllers\\DoctorController.cs",
+              "ToolTip": "D:\\Semester 5\\dotnet\\Hospital Management System\\Controllers\\DoctorController.cs",
+              "RelativeToolTip": "Controllers\\DoctorController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-02T11:05:10.247Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
