@@ -50,7 +50,6 @@ void insertNode(int value){
             }
         }
     }
-
 }
 
 void deleteNode(int value){
