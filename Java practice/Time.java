@@ -8,7 +8,7 @@ public class Time {
         System.out.print("Enter no. of mins: ");
         int min = scanner.nextInt();
 
-        double angle = Math.abs(((30 * hr) + (0.5 * min)) - (min * 6));
+        double angle = Math.abs(((30 * hr) + (5.5 * min)));
 
         System.out.print(angle);
 
